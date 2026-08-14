@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Niranjan Reddy P · Portfolio</title>
+    <title>Niranjan Reddy P Â· Portfolio</title>
     <meta name="description"
-        content="Niranjan Reddy P — Developer, Designer & Engineer. Explore my portfolio showcasing modern web development, design, and AI/ML projects.">
+        content="Niranjan Reddy P â€” Developer, Designer & Engineer. Explore my portfolio showcasing modern web development, design, and AI/ML projects.">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Google Fonts -->
@@ -37,11 +37,15 @@
             <div class="nav-links" id="navLinks">
                 <a href="#home" class="nav-link active" data-section="home">Home</a>
                 <a href="#about" class="nav-link" data-section="about">About</a>
-                <a href="#services" class="nav-link" data-section="services">Services</a>
+                <a href="#services" class="nav-link" data-section="services">What I Do</a>
                 <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+                <a href="#projects" class="nav-link" data-section="projects">Projects</a>
                 <a href="#education" class="nav-link" data-section="education">Education</a>
                 <a href="#experience" class="nav-link" data-section="experience">Experience</a>
                 <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+                <a href="#" class="nav-resume-btn" id="navResumeBtn" onclick="return false;">
+                    <i class="fas fa-file-alt"></i> Resume
+                </a>
             </div>
         </div>
     </nav>
@@ -84,10 +88,15 @@
                             rel="noopener">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="mailto:niranjanreddyp@example.com" class="social-icon" aria-label="Email">
+                        <a href="mailto:nirureddy091@gmail.com" class="social-icon" aria-label="Email">
                             <i class="fas fa-envelope"></i>
                         </a>
                     </div>
+                </div>
+                <div class="hero-cta-row">
+                    <a href="#" class="btn-hire" id="heroResumeBtn" onclick="return false;">
+                        <i class="fas fa-download"></i>
+                        <span>Download Resume</span>
                     </a>
                     <a href="#about" class="btn-explore">
                         <span>Explore</span>
@@ -156,9 +165,10 @@
         </div>
     </section>
 
-    <!-- SERVICES -->
+    <!-- WHAT I DO / CORE COMPETENCIES -->
     <section id="services" class="container reveal">
-        <h2 class="section-title">My <span class="title-accent">Services</span></h2>
+        <h2 class="section-title">What I <span class="title-accent">Do</span></h2>
+        <p class="section-subtitle">Core competencies I bring to every project</p>
         <div class="services-grid">
             <div class="card tilt-card" data-tilt>
                 <div class="card-glow"></div>
@@ -166,7 +176,7 @@
                     <i class="fas fa-code"></i>
                 </div>
                 <h3>Frontend Development</h3>
-                <p>Modern, reactive UIs with pixel‑perfect precision using React, HTML5, CSS3 and JavaScript.</p>
+                <p>Modern, reactive UIs with pixelâ€‘perfect precision using React, HTML5, CSS3 and JavaScript.</p>
                 <div class="card-footer">
                     <span class="card-tag">React</span>
                     <span class="card-tag">CSS3</span>
@@ -244,362 +254,67 @@
     <!-- SKILLS -->
     <section id="skills" class="container reveal">
         <h2 class="section-title">Tech <span class="title-accent">Stack</span></h2>
-        <p class="skills-subtitle">Hover to reveal proficiency · Click to explore</p>
+        <p class="skills-subtitle">Technologies I work with</p>
 
-        <!-- Category Filter Tabs -->
-        <div class="skill-tabs" id="skillTabs">
-            <button class="skill-tab active" data-filter="all">
-                <i class="fas fa-layer-group"></i> All
-            </button>
-            <button class="skill-tab" data-filter="languages">
-                <i class="fas fa-laptop-code"></i> Languages
-            </button>
-            <button class="skill-tab" data-filter="frontend">
-                <i class="fas fa-palette"></i> Frontend
-            </button>
-            <button class="skill-tab" data-filter="backend">
-                <i class="fas fa-database"></i> Backend & Cloud
-            </button>
-            <button class="skill-tab" data-filter="tools">
-                <i class="fas fa-tools"></i> Tools & Design
-            </button>
+        <!-- Languages -->
+        <div class="skill-group">
+            <h3 class="skill-group-title"><i class="fas fa-laptop-code"></i> Languages</h3>
+            <div class="skill-badges">
+                <span class="skill-badge" style="--badge-color:#3776ab"><i class="fab fa-python"></i> Python</span>
+                <span class="skill-badge" style="--badge-color:#f89820"><i class="fab fa-java"></i> Java</span>
+                <span class="skill-badge" style="--badge-color:#00599c"><i class="fas fa-copyright"></i> C / C++</span>
+                <span class="skill-badge" style="--badge-color:#f7df1e"><i class="fab fa-js-square"></i> JavaScript</span>
+                <span class="skill-badge" style="--badge-color:#5391fe"><i class="fas fa-terminal"></i> PowerShell</span>
+            </div>
         </div>
 
-        <!-- Skill Cards Grid -->
-        <div class="skills-hex-grid" id="skillsGrid">
-            <!-- Languages -->
-            <div class="hex-card-wrapper" data-category="languages" data-skill="90" data-color="#3776ab">
-                <div class="hex-card">
-                    <div class="hex-front">
-                        <div class="hex-glow" style="--card-color: #3776ab"></div>
-                        <div class="hex-icon-ring" style="--card-color: #3776ab">
-                            <i class="fab fa-python"></i>
-                        </div>
-                        <span class="hex-name">Python</span>
-                        <span class="hex-category-tag">Language</span>
-                    </div>
-                    <div class="hex-back" style="--card-color: #3776ab">
-                        <svg class="proficiency-ring" viewBox="0 0 120 120">
-                            <circle class="ring-bg" cx="60" cy="60" r="50" />
-                            <circle class="ring-fill" cx="60" cy="60" r="50" data-percent="90" />
-                        </svg>
-                        <span class="proficiency-value">90%</span>
-                        <span class="hex-name-back">Python</span>
-                        <span class="hex-level">Advanced</span>
-                    </div>
-                </div>
+        <!-- Frameworks & Libraries -->
+        <div class="skill-group">
+            <h3 class="skill-group-title"><i class="fas fa-palette"></i> Frameworks &amp; Libraries</h3>
+            <div class="skill-badges">
+                <span class="skill-badge" style="--badge-color:#e34f26"><i class="fab fa-html5"></i> HTML5</span>
+                <span class="skill-badge" style="--badge-color:#1572b6"><i class="fab fa-css3-alt"></i> CSS3</span>
+                <span class="skill-badge" style="--badge-color:#61dafb"><i class="fab fa-react"></i> React</span>
+                <span class="skill-badge" style="--badge-color:#68a063"><i class="fab fa-node-js"></i> Node.js</span>
             </div>
+        </div>
 
-            <div class="hex-card-wrapper" data-category="languages" data-skill="85" data-color="#f89820">
-                <div class="hex-card">
-                    <div class="hex-front">
-                        <div class="hex-glow" style="--card-color: #f89820"></div>
-                        <div class="hex-icon-ring" style="--card-color: #f89820">
-                            <i class="fab fa-java"></i>
-                        </div>
-                        <span class="hex-name">Java</span>
-                        <span class="hex-category-tag">Language</span>
-                    </div>
-                    <div class="hex-back" style="--card-color: #f89820">
-                        <svg class="proficiency-ring" viewBox="0 0 120 120">
-                            <circle class="ring-bg" cx="60" cy="60" r="50" />
-                            <circle class="ring-fill" cx="60" cy="60" r="50" data-percent="85" />
-                        </svg>
-                        <span class="proficiency-value">85%</span>
-                        <span class="hex-name-back">Java</span>
-                        <span class="hex-level">Advanced</span>
-                    </div>
-                </div>
+        <!-- Databases & Cloud -->
+        <div class="skill-group">
+            <h3 class="skill-group-title"><i class="fas fa-database"></i> Databases &amp; Cloud</h3>
+            <div class="skill-badges">
+                <span class="skill-badge" style="--badge-color:#00758f"><i class="fas fa-database"></i> MySQL</span>
+                <span class="skill-badge" style="--badge-color:#ffca28"><i class="fas fa-fire"></i> Firebase</span>
+                <span class="skill-badge" style="--badge-color:#3ecf8e"><i class="fas fa-bolt"></i> Supabase</span>
+                <span class="skill-badge" style="--badge-color:#4285f4"><i class="fab fa-google"></i> Google Cloud</span>
             </div>
+        </div>
 
-            <div class="hex-card-wrapper" data-category="languages" data-skill="80" data-color="#00599c">
-                <div class="hex-card">
-                    <div class="hex-front">
-                        <div class="hex-glow" style="--card-color: #00599c"></div>
-                        <div class="hex-icon-ring" style="--card-color: #00599c">
-                            <i class="fas fa-copyright"></i>
-                        </div>
-                        <span class="hex-name">C / C++</span>
-                        <span class="hex-category-tag">Language</span>
-                    </div>
-                    <div class="hex-back" style="--card-color: #00599c">
-                        <svg class="proficiency-ring" viewBox="0 0 120 120">
-                            <circle class="ring-bg" cx="60" cy="60" r="50" />
-                            <circle class="ring-fill" cx="60" cy="60" r="50" data-percent="80" />
-                        </svg>
-                        <span class="proficiency-value">80%</span>
-                        <span class="hex-name-back">C / C++</span>
-                        <span class="hex-level">Proficient</span>
-                    </div>
-                </div>
+        <!-- Developer Tools -->
+        <div class="skill-group">
+            <h3 class="skill-group-title"><i class="fas fa-tools"></i> Developer Tools</h3>
+            <div class="skill-badges">
+                <span class="skill-badge" style="--badge-color:#f05032"><i class="fab fa-git-alt"></i> Git</span>
+                <span class="skill-badge" style="--badge-color:#181717"><i class="fab fa-github"></i> GitHub</span>
+                <span class="skill-badge" style="--badge-color:#00c4cc"><i class="fas fa-pen-nib"></i> Canva</span>
+                <span class="skill-badge" style="--badge-color:#a259ff"><i class="fab fa-figma"></i> Figma</span>
+                <span class="skill-badge" style="--badge-color:#007acc"><i class="fas fa-code"></i> VS Code</span>
             </div>
+        </div>
 
-            <div class="hex-card-wrapper" data-category="languages" data-skill="88" data-color="#f7df1e">
-                <div class="hex-card">
-                    <div class="hex-front">
-                        <div class="hex-glow" style="--card-color: #f7df1e"></div>
-                        <div class="hex-icon-ring" style="--card-color: #f7df1e">
-                            <i class="fab fa-js-square"></i>
-                        </div>
-                        <span class="hex-name">JavaScript</span>
-                        <span class="hex-category-tag">Language</span>
-                    </div>
-                    <div class="hex-back" style="--card-color: #f7df1e">
-                        <svg class="proficiency-ring" viewBox="0 0 120 120">
-                            <circle class="ring-bg" cx="60" cy="60" r="50" />
-                            <circle class="ring-fill" cx="60" cy="60" r="50" data-percent="88" />
-                        </svg>
-                        <span class="proficiency-value">88%</span>
-                        <span class="hex-name-back">JavaScript</span>
-                        <span class="hex-level">Advanced</span>
-                    </div>
-                </div>
-            </div>
+    </section>
 
-            <div class="hex-card-wrapper" data-category="languages" data-skill="75" data-color="#012456">
-                <div class="hex-card">
-                    <div class="hex-front">
-                        <div class="hex-glow" style="--card-color: #5391fe"></div>
-                        <div class="hex-icon-ring" style="--card-color: #5391fe">
-                            <i class="fas fa-terminal"></i>
-                        </div>
-                        <span class="hex-name">PowerShell</span>
-                        <span class="hex-category-tag">Language</span>
-                    </div>
-                    <div class="hex-back" style="--card-color: #5391fe">
-                        <svg class="proficiency-ring" viewBox="0 0 120 120">
-                            <circle class="ring-bg" cx="60" cy="60" r="50" />
-                            <circle class="ring-fill" cx="60" cy="60" r="50" data-percent="75" />
-                        </svg>
-                        <span class="proficiency-value">75%</span>
-                        <span class="hex-name-back">PowerShell</span>
-                        <span class="hex-level">Proficient</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Frontend -->
-            <div class="hex-card-wrapper" data-category="frontend" data-skill="92" data-color="#e34f26">
-                <div class="hex-card">
-                    <div class="hex-front">
-                        <div class="hex-glow" style="--card-color: #e34f26"></div>
-                        <div class="hex-icon-ring" style="--card-color: #e34f26">
-                            <i class="fab fa-html5"></i>
-                        </div>
-                        <span class="hex-name">HTML5</span>
-                        <span class="hex-category-tag">Frontend</span>
-                    </div>
-                    <div class="hex-back" style="--card-color: #e34f26">
-                        <svg class="proficiency-ring" viewBox="0 0 120 120">
-                            <circle class="ring-bg" cx="60" cy="60" r="50" />
-                            <circle class="ring-fill" cx="60" cy="60" r="50" data-percent="92" />
-                        </svg>
-                        <span class="proficiency-value">92%</span>
-                        <span class="hex-name-back">HTML5</span>
-                        <span class="hex-level">Expert</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="hex-card-wrapper" data-category="frontend" data-skill="88" data-color="#1572b6">
-                <div class="hex-card">
-                    <div class="hex-front">
-                        <div class="hex-glow" style="--card-color: #1572b6"></div>
-                        <div class="hex-icon-ring" style="--card-color: #1572b6">
-                            <i class="fab fa-css3-alt"></i>
-                        </div>
-                        <span class="hex-name">CSS3</span>
-                        <span class="hex-category-tag">Frontend</span>
-                    </div>
-                    <div class="hex-back" style="--card-color: #1572b6">
-                        <svg class="proficiency-ring" viewBox="0 0 120 120">
-                            <circle class="ring-bg" cx="60" cy="60" r="50" />
-                            <circle class="ring-fill" cx="60" cy="60" r="50" data-percent="88" />
-                        </svg>
-                        <span class="proficiency-value">88%</span>
-                        <span class="hex-name-back">CSS3</span>
-                        <span class="hex-level">Advanced</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="hex-card-wrapper" data-category="frontend" data-skill="82" data-color="#61dafb">
-                <div class="hex-card">
-                    <div class="hex-front">
-                        <div class="hex-glow" style="--card-color: #61dafb"></div>
-                        <div class="hex-icon-ring" style="--card-color: #61dafb">
-                            <i class="fab fa-react"></i>
-                        </div>
-                        <span class="hex-name">React</span>
-                        <span class="hex-category-tag">Frontend</span>
-                    </div>
-                    <div class="hex-back" style="--card-color: #61dafb">
-                        <svg class="proficiency-ring" viewBox="0 0 120 120">
-                            <circle class="ring-bg" cx="60" cy="60" r="50" />
-                            <circle class="ring-fill" cx="60" cy="60" r="50" data-percent="82" />
-                        </svg>
-                        <span class="proficiency-value">82%</span>
-                        <span class="hex-name-back">React</span>
-                        <span class="hex-level">Proficient</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Backend & Cloud -->
-            <div class="hex-card-wrapper" data-category="backend" data-skill="85" data-color="#68a063">
-                <div class="hex-card">
-                    <div class="hex-front">
-                        <div class="hex-glow" style="--card-color: #68a063"></div>
-                        <div class="hex-icon-ring" style="--card-color: #68a063">
-                            <i class="fab fa-node-js"></i>
-                        </div>
-                        <span class="hex-name">Node.js</span>
-                        <span class="hex-category-tag">Backend</span>
-                    </div>
-                    <div class="hex-back" style="--card-color: #68a063">
-                        <svg class="proficiency-ring" viewBox="0 0 120 120">
-                            <circle class="ring-bg" cx="60" cy="60" r="50" />
-                            <circle class="ring-fill" cx="60" cy="60" r="50" data-percent="85" />
-                        </svg>
-                        <span class="proficiency-value">85%</span>
-                        <span class="hex-name-back">Node.js</span>
-                        <span class="hex-level">Advanced</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="hex-card-wrapper" data-category="backend" data-skill="78" data-color="#00758f">
-                <div class="hex-card">
-                    <div class="hex-front">
-                        <div class="hex-glow" style="--card-color: #00758f"></div>
-                        <div class="hex-icon-ring" style="--card-color: #00758f">
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <span class="hex-name">MySQL</span>
-                        <span class="hex-category-tag">Backend</span>
-                    </div>
-                    <div class="hex-back" style="--card-color: #00758f">
-                        <svg class="proficiency-ring" viewBox="0 0 120 120">
-                            <circle class="ring-bg" cx="60" cy="60" r="50" />
-                            <circle class="ring-fill" cx="60" cy="60" r="50" data-percent="78" />
-                        </svg>
-                        <span class="proficiency-value">78%</span>
-                        <span class="hex-name-back">MySQL</span>
-                        <span class="hex-level">Proficient</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="hex-card-wrapper" data-category="backend" data-skill="80" data-color="#ffca28">
-                <div class="hex-card">
-                    <div class="hex-front">
-                        <div class="hex-glow" style="--card-color: #ffca28"></div>
-                        <div class="hex-icon-ring" style="--card-color: #ffca28">
-                            <i class="fas fa-fire"></i>
-                        </div>
-                        <span class="hex-name">Firebase</span>
-                        <span class="hex-category-tag">Cloud</span>
-                    </div>
-                    <div class="hex-back" style="--card-color: #ffca28">
-                        <svg class="proficiency-ring" viewBox="0 0 120 120">
-                            <circle class="ring-bg" cx="60" cy="60" r="50" />
-                            <circle class="ring-fill" cx="60" cy="60" r="50" data-percent="80" />
-                        </svg>
-                        <span class="proficiency-value">80%</span>
-                        <span class="hex-name-back">Firebase</span>
-                        <span class="hex-level">Proficient</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="hex-card-wrapper" data-category="backend" data-skill="76" data-color="#3ecf8e">
-                <div class="hex-card">
-                    <div class="hex-front">
-                        <div class="hex-glow" style="--card-color: #3ecf8e"></div>
-                        <div class="hex-icon-ring" style="--card-color: #3ecf8e">
-                            <i class="fas fa-bolt"></i>
-                        </div>
-                        <span class="hex-name">Supabase</span>
-                        <span class="hex-category-tag">Cloud</span>
-                    </div>
-                    <div class="hex-back" style="--card-color: #3ecf8e">
-                        <svg class="proficiency-ring" viewBox="0 0 120 120">
-                            <circle class="ring-bg" cx="60" cy="60" r="50" />
-                            <circle class="ring-fill" cx="60" cy="60" r="50" data-percent="76" />
-                        </svg>
-                        <span class="proficiency-value">76%</span>
-                        <span class="hex-name-back">Supabase</span>
-                        <span class="hex-level">Proficient</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="hex-card-wrapper" data-category="backend" data-skill="72" data-color="#4285f4">
-                <div class="hex-card">
-                    <div class="hex-front">
-                        <div class="hex-glow" style="--card-color: #4285f4"></div>
-                        <div class="hex-icon-ring" style="--card-color: #4285f4">
-                            <i class="fab fa-google"></i>
-                        </div>
-                        <span class="hex-name">Google Cloud</span>
-                        <span class="hex-category-tag">Cloud</span>
-                    </div>
-                    <div class="hex-back" style="--card-color: #4285f4">
-                        <svg class="proficiency-ring" viewBox="0 0 120 120">
-                            <circle class="ring-bg" cx="60" cy="60" r="50" />
-                            <circle class="ring-fill" cx="60" cy="60" r="50" data-percent="72" />
-                        </svg>
-                        <span class="proficiency-value">72%</span>
-                        <span class="hex-name-back">Google Cloud</span>
-                        <span class="hex-level">Intermediate</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Tools & Design -->
-            <div class="hex-card-wrapper" data-category="tools" data-skill="85" data-color="#f05032">
-                <div class="hex-card">
-                    <div class="hex-front">
-                        <div class="hex-glow" style="--card-color: #f05032"></div>
-                        <div class="hex-icon-ring" style="--card-color: #f05032">
-                            <i class="fab fa-git-alt"></i>
-                        </div>
-                        <span class="hex-name">Git</span>
-                        <span class="hex-category-tag">Tool</span>
-                    </div>
-                    <div class="hex-back" style="--card-color: #f05032">
-                        <svg class="proficiency-ring" viewBox="0 0 120 120">
-                            <circle class="ring-bg" cx="60" cy="60" r="50" />
-                            <circle class="ring-fill" cx="60" cy="60" r="50" data-percent="85" />
-                        </svg>
-                        <span class="proficiency-value">85%</span>
-                        <span class="hex-name-back">Git</span>
-                        <span class="hex-level">Advanced</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="hex-card-wrapper" data-category="tools" data-skill="80" data-color="#00c4cc">
-                <div class="hex-card">
-                    <div class="hex-front">
-                        <div class="hex-glow" style="--card-color: #00c4cc"></div>
-                        <div class="hex-icon-ring" style="--card-color: #00c4cc">
-                            <i class="fas fa-pen-nib"></i>
-                        </div>
-                        <span class="hex-name">Canva</span>
-                        <span class="hex-category-tag">Design</span>
-                    </div>
-                    <div class="hex-back" style="--card-color: #00c4cc">
-                        <svg class="proficiency-ring" viewBox="0 0 120 120">
-                            <circle class="ring-bg" cx="60" cy="60" r="50" />
-                            <circle class="ring-fill" cx="60" cy="60" r="50" data-percent="80" />
-                        </svg>
-                        <span class="proficiency-value">80%</span>
-                        <span class="hex-name-back">Canva</span>
-                        <span class="hex-level">Proficient</span>
-                    </div>
-                </div>
-            </div>
+    <!-- PROJECTS -->
+    <section id="projects" class="container reveal">
+        <h2 class="section-title">Featured <span class="title-accent">Projects</span></h2>
+        <p class="section-subtitle">A showcase of things I've built &mdash; coming soon</p>
+        <div class="projects-coming-soon">
+            <div class="coming-soon-icon"><i class="fas fa-laptop-code"></i></div>
+            <h3>Projects Coming Soon</h3>
+            <p>I'm currently curating my best work. Check back shortly for featured projects with live demos and source code.</p>
+            <a href="https://github.com/niruredddy" target="_blank" rel="noopener" class="btn-hire" style="margin-top:1.5rem;display:inline-flex;">
+                <i class="fab fa-github"></i> View GitHub Profile
+            </a>
         </div>
     </section>
 
@@ -614,7 +329,7 @@
                 <div class="timeline-content tilt-card" data-tilt>
                     <div class="timeline-badge">Current</div>
                     <h3>S J C I T</h3>
-                    <p class="timeline-period"><i class="far fa-calendar-alt"></i> 2024 – 2028</p>
+                    <p class="timeline-period"><i class="far fa-calendar-alt"></i> 2024 â€“ 2028</p>
                     <p class="timeline-degree">Bachelor of Engineering</p>
                     <small class="timeline-detail">CSE (Artificial Intelligence & Machine Learning)</small>
                 </div>
@@ -625,9 +340,9 @@
                 </span>
                 <div class="timeline-content tilt-card" data-tilt>
                     <h3>BGS PU College</h3>
-                    <p class="timeline-period"><i class="far fa-calendar-alt"></i> 2022 – 2024</p>
+                    <p class="timeline-period"><i class="far fa-calendar-alt"></i> 2022 â€“ 2024</p>
                     <p class="timeline-degree">Pre-University Course</p>
-                    <small class="timeline-detail">PCMC · Karnataka Pre-University Education Board</small>
+                    <small class="timeline-detail">PCMC Â· Karnataka Pre-University Education Board</small>
                 </div>
             </div>
             <div class="timeline-item reveal-child">
@@ -636,7 +351,7 @@
                 </span>
                 <div class="timeline-content tilt-card" data-tilt>
                     <h3>Vidyanidhi Public School</h3>
-                    <p class="timeline-period"><i class="far fa-calendar-alt"></i> 2011 – 2022</p>
+                    <p class="timeline-period"><i class="far fa-calendar-alt"></i> 2011 â€“ 2022</p>
                     <p class="timeline-degree">Primary & Secondary Education</p>
                     <small class="timeline-detail">Board: ICSE</small>
                 </div>
@@ -655,7 +370,7 @@
                 <div class="timeline-content tilt-card" data-tilt>
                     <div class="timeline-badge">Present</div>
                     <h3>Freelance Developer</h3>
-                    <p class="timeline-period"><i class="far fa-calendar-alt"></i> 2024 – Present</p>
+                    <p class="timeline-period"><i class="far fa-calendar-alt"></i> 2024 â€“ Present</p>
                     <p class="timeline-degree">Full Stack Web Development</p>
                     <small class="timeline-detail">Building modern web applications using React, Node.js, and cloud
                         platforms.</small>
@@ -667,7 +382,7 @@
                 </span>
                 <div class="timeline-content tilt-card" data-tilt>
                     <h3>Academic Projects</h3>
-                    <p class="timeline-period"><i class="far fa-calendar-alt"></i> 2024 – Present</p>
+                    <p class="timeline-period"><i class="far fa-calendar-alt"></i> 2024 â€“ Present</p>
                     <p class="timeline-degree">AI/ML & Web Development</p>
                     <small class="timeline-detail">Digital Identity Systems, CorpSphere Platform, and more
                         university-level projects.</small>
@@ -703,7 +418,7 @@
                         <div class="contact-detail-icon"><i class="fas fa-graduation-cap"></i></div>
                         <div>
                             <span class="contact-detail-label">University</span>
-                            <span class="contact-detail-value">S J C I T · CSE (AIML)</span>
+                            <span class="contact-detail-value">S J C I T Â· CSE (AIML)</span>
                         </div>
                     </div>
                 </div>
@@ -731,8 +446,9 @@
                     <h4>Navigation</h4>
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
-                    <a href="#services">Services</a>
+                    <a href="#services">What I Do</a>
                     <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
                 </div>
                 <div class="footer-col">
                     <h4>More</h4>
